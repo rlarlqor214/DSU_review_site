@@ -11,3 +11,14 @@
 <img width="1728" alt="image" src="https://github.com/2ubse/DSU_review_site/assets/76634341/09a64d20-2af8-45ac-84cd-f490a8012d32">
 
 <h1>팀원</h1>
+20191434 김강민 : 백엔드 / 프론트엔드
+?? 정규환 : 프론트엔드
+?? 오준영 : 프론트엔드
+?? 장우영 : 기획 및 ui 설계 및 db 설계
+
+<h1>디비</h1>
+
+<h1>해야할것</h1>
+* redux 사용하여 전역 상태관리 구현 => 로그인 상태 유지 / api 데이터 조회
+* api 데이터 조회를 위한 json() 사용 / 서버 응답 상태 api 구현
+* 쿠키 : 로그인 상태 boolean / expire() 시간 구현
