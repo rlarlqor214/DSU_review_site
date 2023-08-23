@@ -18,6 +18,9 @@
 
 <h1>디비</h1>
 
+<img width="942" alt="image" src="https://github.com/2ubse/DSU_review_site/assets/76634341/c139d149-c6a9-43f1-a7bb-89f284c8f655">
+
+
 <h1>해야할것</h1>
 * redux 사용하여 전역 상태관리 구현 => 로그인 상태 유지 / api 데이터 조회
 * api 데이터 조회를 위한 json() 사용 / 서버 응답 상태 api 구현
