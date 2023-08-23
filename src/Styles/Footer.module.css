@@ -1,0 +1,31 @@
+.footer {
+    display: flex;
+    color: #959595;
+    background: #3e3e3e;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 40px;
+}
+
+.copyright {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.p {
+    line-height: 150%;
+}
+
+.copyright p {
+    font-size: 15px;
+    letter-spacing: 0;
+}
+
+.copyright p span {
+    display: inline-block;
+    margin: 0 10px;
+    white-space: nowrap;
+    font-style: normal;
+}

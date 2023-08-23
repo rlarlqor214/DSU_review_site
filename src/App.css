@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 2rem;
+    background-color: #c20324;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.titlecontainer {
+    flex: 1;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 130px;
+    color: aliceblue;
+    margin-left: 50px;
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 80px;
+    margin-left: 50px;
+}
+
+.title {
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Orbit', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Orbit&display=swap');
+
+.footer {
+    display: flex;
+    color: #959595;
+    background: #3e3e3e;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 40px;
+}
+
+.copyright {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.p {
+    line-height: 150%;
+}
+
+.copyright p {
+    font-size: 15px;
+    letter-spacing: 0;
+}
+
+.copyright p span {
+    display: inline-block;
+    margin: 0 10px;
+    white-space: nowrap;
+    font-style: normal;
+}
+
+/* .leftaside {
+   
+} */
+.left {
+    top: 25px;
+    width: 100px;
+    height: 350px;
+    padding-top: 30px;
+    border-radius: 18px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 8px 16px 0px;
+    border-radius: 0 0 6px 0;
+    border: 1px solid #ccc;
+    border-spacing: 100px;
+    flex-direction: column;
+    background-color: white;
+}
+
+.rightaside {
+    width: 800px;
+    height: 100px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 8px 16px 0px;
+    border-radius: 0 0 6px 0;
+    border: 1px solid #ccc;
+    padding-left: 200px;
+}
+
+hr {
+    width: 30px;
+    text-align: center;
+}
+
+.leftaside_content {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+.rightaside_content {
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+aside {
+    position: fixed;
+}
+.leftaside {
+    padding-top: 200px;
+}
+
+.cardView {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.card_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding-left: 200px;
+}
