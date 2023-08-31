@@ -17,7 +17,7 @@ const Main = () => {
             <Footer></Footer>
             <Pop_up isOpen={isModalOpen} closeModal={closeModal}>
                 <h2>공지사항</h2>
-                <p>여기 공지사항 입니다</p>
+                <p>수강후기 글에 관한 공지사항 입니다.</p>
             </Pop_up>
         </div>
     );

@@ -8,7 +8,7 @@ const Card2 = (props) => {
                 <div class="content">
                     <h2 class="title">{props.title}</h2>
                     <p class="copy">{props.inner}</p>
-                    <button class="btn">⭐⭐️⭐️⭐️⭐️️</button>
+                    <button class="btn">{props.likes}</button>
                 </div>
             </div>
             {/* <div class="card">

@@ -1,0 +1,111 @@
+.body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 77.7vh;
+    width: 100vw;
+    /* background-image: url('https://im.dongseo.ac.kr/resources/images/img_mainVisual.png');
+    background-repeat: no-repeat;
+    background-position: 355px 90px ; */
+    animation: fade 1s ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    border: 2px solid black;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.form {
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    overflow: hidden;
+    width: 768px;
+    height: 370px;
+    opacity: 0.8;
+    background: rgba(45, 52, 54, 1);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.inputForm {
+    width: 240px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    font-family: 'PLay', sans-serif;
+    font-size: 16px;
+    font-weight: 200px;
+    padding: 10px 0;
+    transition: border 0.5s;
+    outline: none;
+    color: #fff;
+    font-weight: bold;
+    font-family: 'Bagel Fat One', cursive;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Gasoek One', sans-serif;
+    font-family: 'Orbit', sans-serif;
+}
+
+.h2 {
+    color: #fff;
+    font-family: 'Bagel Fat One', cursive;
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Gasoek One', sans-serif;
+    font-family: 'Orbit', sans-serif;
+}
+
+.btn {
+    width: 116px;
+    padding: 10px 0;
+    background-color: #c20324;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0.7, 0.7);
+    margin-top: 10px;
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Orbit', sans-serif;
+}
+
+.btn:hover {
+    background-color: #870119;
+}
+
+.label {
+    color: orange;
+    font-family: 'Black Han Sans', sans-serif;
+    font-family: 'Orbit', sans-serif;
+}
+
+.label:hover {
+    text-decoration: underline;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Black+Han+Sans&family=Do+Hyeon&family=Gasoek+One&family=Orbit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Bebas+Neue&family=Black+Han+Sans&family=Do+Hyeon&family=Gasoek+One&family=Orbit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Orbit&display=swap');

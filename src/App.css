@@ -148,3 +148,7 @@ aside {
     flex-wrap: wrap;
     padding-left: 200px;
 }
+
+.leftaside_content {
+    font-size: 20px;
+}

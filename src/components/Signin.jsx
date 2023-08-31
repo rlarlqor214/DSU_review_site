@@ -1,33 +1,81 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import styles from '../Styles/Signin.module.css';
 import { Link } from 'react-router-dom';
 import Header from './Header';
 import Footer from './Footer';
-
-const images = ['image1', 'image2', 'image3', 'image4'];
+import { useDispatch, useSelector } from 'react-redux';
+import { useState, useEffect } from 'react';
 
 function Signin() {
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
+    const images = ['image1', 'image2', 'image3', 'image4'];
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-    const handleUsernameChange = (event) => {
-        setUsername(event.target.value);
+    const Data = {
+        id: 'amazon7737',
+        password: '1234',
+    };
+    // 로그인 데이터 정의
+    const [id, setId] = useState('');
+    const [password, setPassword] = useState('');
+
+    // 상태유지
+    const Myfunction = () => {
+        // setStatus(true);
+        dispatch({
+            type: 'SET_TOKEN',
+            payload: true,
+        }); // console.log('!!!:', status);
     };
 
-    const handlePasswordChange = (event) => {
-        setPassword(event.target.value);
+    const dispatch = useDispatch();
+    const token = useSelector((state) => state.token);
+
+    // 로그인데이터 관리
+
+    const inputIdHandler = (e) => {
+        setId(e.target.value);
+    };
+
+    const inputPassHandler = (e) => {
+        setPassword(e.target.value);
+    };
+
+    // 로그인 처리
+
+    const signIn = () => {
+        const userData = {
+            userId: id,
+            userPassword: password,
+        };
+
+        try {
+            console.log('userData:', userData);
+            if (userData.userId === Data.id && userData.userPassword === Data.password) {
+                Myfunction();
+                alert('로그인 확인되었습니다.');
+                window.location.replace('/main');
+            } else {
+                alert('아이디 또는 비밀번호를 확인해주세요.');
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    };
+
+    // 로그아웃 처리
+
+    const signOut = () => {
+        dispatch({
+            type: 'CLEAR_TOKEN',
+        });
+        if (token === true) {
+            alert('로그아웃 되었습니다.');
+        }
     };
 
     useEffect(() => {
-        const timer = setInterval(() => {
-            setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-        }, 2000);
-
-        return () => {
-            clearInterval(timer);
-        };
-    }, []);
+        console.log('!!!:', token);
+    }, [token]);
 
     return (
         <div>
@@ -47,9 +95,8 @@ function Signin() {
                         <br></br>
                         <input
                             type="text"
-                            placeholder="아이디"
-                            value={username}
-                            onChange={handleUsernameChange}
+                            onChange={inputIdHandler}
+                            placeholder="아이디를 입력하세요"
                         />
                     </div>
 
@@ -57,10 +104,9 @@ function Signin() {
                         <label className={styles.log}>Password: </label>
                         <br></br>
                         <input
-                            type="password"
-                            placeholder="비밀번호"
-                            value={password}
-                            onChange={handlePasswordChange}
+                            type="text"
+                            onChange={inputPassHandler}
+                            placeholder="비밀번호를 입력하세요"
                         />
                     </div>
 
@@ -70,9 +116,7 @@ function Signin() {
                                 <strong>회원가입</strong>
                             </button>
                         </Link>
-                        <button type="submit">
-                            <strong>로그인</strong>
-                        </button>
+                        <button onClick={signIn}>로그인하기</button>
                     </div>
 
                     <div className={styles.vline}>
@@ -80,10 +124,7 @@ function Signin() {
                             <h2 className={styles.title}>공지사항</h2>
                         </div>
                         <div className={styles.scrollContainer}>
-                            <p>
-                                본 사이트는 동서대학생들을 위한 수강 리뷰 사이트임 ㅎ 다른 학교
-                                학생들은 못들어옴 ㅎ
-                            </p>
+                            <p>동서대학교 수강 후기 글을 모아놓은 수강 후기 사이트 입니다.</p>
                         </div>
                     </div>
                 </div>
